@@ -1,9 +1,7 @@
-export const dynamicParams = true;
-export const dynamic = "error";
-export const revalidate = 60;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
-  let slugs = ['1', '2', '3'];
+  let slugs = ['1', '2', '3', '4', '5', '6'];
   return slugs.map((slug) => ({ id: slug }));
 }
 
